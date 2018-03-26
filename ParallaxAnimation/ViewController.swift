@@ -14,8 +14,7 @@ class ViewController: UIViewController {
     
     static let cellIndentifier = "collectionViewCell"
     
-    let image_offset_speed: CGFloat = 100.0
-    let image_height = UIScreen.main.bounds.size.width
+    let image_rate_speed: CGFloat = 0.6
     
     var collectionView: UICollectionView?
     
@@ -62,21 +61,16 @@ class ViewController: UIViewController {
 }
 
 extension ViewController: UICollectionViewDelegate {
-    // 在即将显示的时候，对cell上进行图片展示的操作
     func collectionView(_ collectionView: UICollectionView, willDisplay cell: UICollectionViewCell, forItemAt indexPath: IndexPath) {
         if let myCell = cell as? MyCollectionViewCell {
-//            myCell.imageView.backgroundColor = UIColor.randomColor
             myCell.imageView.backgroundColor = UIColor.lightGray
             let url = URL(string: urlsArray[indexPath.row])
-            
             _ = myCell.imageView.kf.setImage(with: url,
                                              placeholder: nil,
                                              options: [.transition(ImageTransition.fade(1))],
                                              progressBlock: { receiveSize, totalSize in
-                                                
                                                 let str = String(format: "%.2f", receiveSize / totalSize)
                                                 print("\(indexPath.row + 1): \(str)")
-                                                
                                                 },
                                              completionHandler: { (image, error, cacheType, imageUrl) in
                                                 print("\(indexPath.row) + 1: Finished")
@@ -84,9 +78,9 @@ extension ViewController: UICollectionViewDelegate {
         }
     }
     
-    // 在结束的时候就不去显示了
     func collectionView(_ collectionView: UICollectionView, didEndDisplaying cell: UICollectionViewCell, forItemAt indexPath: IndexPath) {
         if let myCell = cell as? MyCollectionViewCell {
+            // cancel all unfinished downloading task when the cell disappearing.
             myCell.imageView.kf.cancelDownloadTask()
         }
     }
@@ -95,18 +89,10 @@ extension ViewController: UICollectionViewDelegate {
         for cell in collectionView!.visibleCells {
             let myCell = cell as! MyCollectionViewCell
             
-            // 每一个cell.frame.origin.x 都是固定的，不会发生改变
-            //let xOffset = (collectionView!.contentOffset.x - cell.frame.origin.x)  // 如果想要背景不动的换页的效果，这是可以的
-            let xOffset = (collectionView!.contentOffset.x - cell.frame.origin.x) * 0.6
-            
-            //  其实说白了就是让imageView和collectionView的的移动速度不一致 -> 让他们的偏移量不一致 -> 拥有不同的比例即可
-            //  都是在向右移动
-            
-            // cell 在滑动的时候；imageview并不是在跟着一起滑动的，而是会向和CollectionView移动的相反的方向滑动
-            // 即cell向左移动的时候，imageView应该是向右移动的
-            
+            // Different offset  ->  Different speed  -> ParallaxAnimation
+            // When image_rate_speed = 1 what will happen, you can have a try.
+            let xOffset = (collectionView!.contentOffset.x - cell.frame.origin.x) * image_rate_speed
             myCell.imageOffset = CGPoint(x: xOffset, y: 0.0)
-            print("collectionOffSet_x: \(collectionView!.contentOffset.x) cell.frame.origin.x: \(cell.frame.origin.x)")
         }
     }
 }
@@ -115,11 +101,8 @@ extension ViewController: UICollectionViewDataSource {
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: ViewController.cellIndentifier, for: indexPath) as! MyCollectionViewCell
         
-        // 设置指示器
+        // set loading indicator
         cell.imageView.kf.indicatorType = .custom(indicator: MyInditor())
-//
-//        let xOffset = ((collectionView.contentOffset.x - cell.frame.origin.x) / image_height) * image_offset_speed
-//        cell.imageOffset = CGPoint(x: xOffset, y: 0.0)
         
         return cell
     }
@@ -149,18 +132,5 @@ extension ViewController: UICollectionViewDataSourcePrefetching {
         }
         // 提前下载并且做好缓存
         ImagePrefetcher(urls: urls).start()
-    }
-}
-
-
-
-extension UIColor {
-    class var randomColor: UIColor {
-        get {
-            let red = CGFloat(arc4random()%256)/255.0
-            let green = CGFloat(arc4random()%256)/255.0
-            let blue = CGFloat(arc4random()%256)/255.0
-            return UIColor(red: red, green: green, blue: blue, alpha: 1.0)
-        }
     }
 }
