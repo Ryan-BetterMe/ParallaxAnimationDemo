@@ -1,0 +1,420 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		AAC1973DE23D5EE90381F465 /* Pods_ParallaxAnimation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 89B033BBF7D5049E4524F2FD /* Pods_ParallaxAnimation.framework */; };
+		BB4A6222206897C10096BE58 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB4A6221206897C10096BE58 /* AppDelegate.swift */; };
+		BB4A6224206897C10096BE58 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB4A6223206897C10096BE58 /* ViewController.swift */; };
+		BB4A6227206897C10096BE58 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BB4A6225206897C10096BE58 /* Main.storyboard */; };
+		BB4A6229206897C10096BE58 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BB4A6228206897C10096BE58 /* Assets.xcassets */; };
+		BB4A622C206897C10096BE58 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BB4A622A206897C10096BE58 /* LaunchScreen.storyboard */; };
+		BB4A6237206898B40096BE58 /* MyCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB4A6235206898B40096BE58 /* MyCollectionViewCell.swift */; };
+		BB4A6238206898B40096BE58 /* MyCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BB4A6236206898B40096BE58 /* MyCollectionViewCell.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		21B79B03A99B39165D7A292A /* Pods-ParallaxAnimation.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ParallaxAnimation.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ParallaxAnimation/Pods-ParallaxAnimation.debug.xcconfig"; sourceTree = "<group>"; };
+		89B033BBF7D5049E4524F2FD /* Pods_ParallaxAnimation.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ParallaxAnimation.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BB4A621E206897C10096BE58 /* ParallaxAnimation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ParallaxAnimation.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		BB4A6221206897C10096BE58 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		BB4A6223206897C10096BE58 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		BB4A6226206897C10096BE58 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		BB4A6228206897C10096BE58 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		BB4A622B206897C10096BE58 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		BB4A622D206897C10096BE58 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BB4A6235206898B40096BE58 /* MyCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyCollectionViewCell.swift; sourceTree = "<group>"; };
+		BB4A6236206898B40096BE58 /* MyCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MyCollectionViewCell.xib; sourceTree = "<group>"; };
+		C8E5789FBEDB24CC7224DE71 /* Pods-ParallaxAnimation.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ParallaxAnimation.release.xcconfig"; path = "Pods/Target Support Files/Pods-ParallaxAnimation/Pods-ParallaxAnimation.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		BB4A621B206897C10096BE58 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AAC1973DE23D5EE90381F465 /* Pods_ParallaxAnimation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		011CFF17ED4CFAAA743C771E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				89B033BBF7D5049E4524F2FD /* Pods_ParallaxAnimation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		129951D36281B003E2E7CB16 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				21B79B03A99B39165D7A292A /* Pods-ParallaxAnimation.debug.xcconfig */,
+				C8E5789FBEDB24CC7224DE71 /* Pods-ParallaxAnimation.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		BB4A6215206897C10096BE58 = {
+			isa = PBXGroup;
+			children = (
+				BB4A6220206897C10096BE58 /* ParallaxAnimation */,
+				BB4A621F206897C10096BE58 /* Products */,
+				129951D36281B003E2E7CB16 /* Pods */,
+				011CFF17ED4CFAAA743C771E /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		BB4A621F206897C10096BE58 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BB4A621E206897C10096BE58 /* ParallaxAnimation.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BB4A6220206897C10096BE58 /* ParallaxAnimation */ = {
+			isa = PBXGroup;
+			children = (
+				BB4A6221206897C10096BE58 /* AppDelegate.swift */,
+				BB4A6223206897C10096BE58 /* ViewController.swift */,
+				BB4A6225206897C10096BE58 /* Main.storyboard */,
+				BB4A6228206897C10096BE58 /* Assets.xcassets */,
+				BB4A622A206897C10096BE58 /* LaunchScreen.storyboard */,
+				BB4A622D206897C10096BE58 /* Info.plist */,
+				BB4A6235206898B40096BE58 /* MyCollectionViewCell.swift */,
+				BB4A6236206898B40096BE58 /* MyCollectionViewCell.xib */,
+			);
+			path = ParallaxAnimation;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		BB4A621D206897C10096BE58 /* ParallaxAnimation */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BB4A6230206897C10096BE58 /* Build configuration list for PBXNativeTarget "ParallaxAnimation" */;
+			buildPhases = (
+				3E3197D4A42D33C6F9DDC96D /* [CP] Check Pods Manifest.lock */,
+				BB4A621A206897C10096BE58 /* Sources */,
+				BB4A621B206897C10096BE58 /* Frameworks */,
+				BB4A621C206897C10096BE58 /* Resources */,
+				63D28733C0277992B2DD30C8 /* [CP] Embed Pods Frameworks */,
+				C17DCC5D791438116508EBE1 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ParallaxAnimation;
+			productName = ParallaxAnimation;
+			productReference = BB4A621E206897C10096BE58 /* ParallaxAnimation.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BB4A6216206897C10096BE58 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0920;
+				LastUpgradeCheck = 0920;
+				ORGANIZATIONNAME = JaniXiang;
+				TargetAttributes = {
+					BB4A621D206897C10096BE58 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = BB4A6219206897C10096BE58 /* Build configuration list for PBXProject "ParallaxAnimation" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = BB4A6215206897C10096BE58;
+			productRefGroup = BB4A621F206897C10096BE58 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				BB4A621D206897C10096BE58 /* ParallaxAnimation */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		BB4A621C206897C10096BE58 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BB4A622C206897C10096BE58 /* LaunchScreen.storyboard in Resources */,
+				BB4A6229206897C10096BE58 /* Assets.xcassets in Resources */,
+				BB4A6238206898B40096BE58 /* MyCollectionViewCell.xib in Resources */,
+				BB4A6227206897C10096BE58 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3E3197D4A42D33C6F9DDC96D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ParallaxAnimation-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		63D28733C0277992B2DD30C8 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-ParallaxAnimation/Pods-ParallaxAnimation-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Kingfisher/Kingfisher.framework",
+				"${BUILT_PRODUCTS_DIR}/NVActivityIndicatorView/NVActivityIndicatorView.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Kingfisher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/NVActivityIndicatorView.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ParallaxAnimation/Pods-ParallaxAnimation-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C17DCC5D791438116508EBE1 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ParallaxAnimation/Pods-ParallaxAnimation-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		BB4A621A206897C10096BE58 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BB4A6224206897C10096BE58 /* ViewController.swift in Sources */,
+				BB4A6222206897C10096BE58 /* AppDelegate.swift in Sources */,
+				BB4A6237206898B40096BE58 /* MyCollectionViewCell.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		BB4A6225206897C10096BE58 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BB4A6226206897C10096BE58 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		BB4A622A206897C10096BE58 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BB4A622B206897C10096BE58 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		BB4A622E206897C10096BE58 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		BB4A622F206897C10096BE58 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		BB4A6231206897C10096BE58 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 21B79B03A99B39165D7A292A /* Pods-ParallaxAnimation.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4KHAQR7YSP;
+				INFOPLIST_FILE = ParallaxAnimation/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = JaniXiang.ParallaxAnimation;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		BB4A6232206897C10096BE58 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C8E5789FBEDB24CC7224DE71 /* Pods-ParallaxAnimation.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4KHAQR7YSP;
+				INFOPLIST_FILE = ParallaxAnimation/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = JaniXiang.ParallaxAnimation;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		BB4A6219206897C10096BE58 /* Build configuration list for PBXProject "ParallaxAnimation" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BB4A622E206897C10096BE58 /* Debug */,
+				BB4A622F206897C10096BE58 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BB4A6230206897C10096BE58 /* Build configuration list for PBXNativeTarget "ParallaxAnimation" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BB4A6231206897C10096BE58 /* Debug */,
+				BB4A6232206897C10096BE58 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BB4A6216206897C10096BE58 /* Project object */;
+}
